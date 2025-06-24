@@ -23,7 +23,7 @@ class _AuthScreenState extends State<AuthScreen> {
     final password = _passwordController.text.trim();
 
     final url = Uri.parse(
-        'http://192.168.1.109:5000/${isLogin ? 'login' : 'register'}');
+        'http://192.168.1.114:5000/${isLogin ? 'login' : 'register'}');
     final response = await http.post(
       url,
       headers: {'Content-Type': 'application/json'},

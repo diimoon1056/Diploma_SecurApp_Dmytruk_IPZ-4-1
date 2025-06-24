@@ -8,7 +8,7 @@ plugins {
 android {
     namespace = "com.securapp.secur_app"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    ndkVersion = "27.0.12077973"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -42,19 +42,3 @@ android {
 flutter {
     source = "../.."
 }
-Launching lib\main.dart on sdk gphone64 x86 64 in debug mode...
-Running Gradle task 'assembleDebug'...
-Your project is configured with Android NDK 26.3.11579264, but the following plugin(s) depend on a different Android NDK version:
-- flutter_secure_storage requires Android NDK 27.0.12077973
-- path_provider_android requires Android NDK 27.0.12077973
-Fix this issue by using the highest Android NDK version (they are backward compatible).
-Add the following to C:\Users\User\StudioProjects\secur_app\android\app\build.gradle.kts:
-
-android {
-    ndkVersion = "27.0.12077973"
-    ...
-}
-warning: [options] source value 8 is obsolete and will be removed in a future release
-        warning: [options] target value 8 is obsolete and will be removed in a future release
-        warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
-3 warnings
